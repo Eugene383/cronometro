@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    animation: back  2s ease-in-out alternate-reverse infinite;     
+}
+@keyframes back{
+    0%{
+        background:linear-gradient(90deg,#ffcf26,#3929f1,#eb22cb);  
+    }
+    50%{
+        background:linear-gradient(90deg,#f1ae00,#9613ad,#a0004f,#ffdcc5); 
+    }
+    100%{
+        background:linear-gradient(90deg,#ff99a2,#e406b5,#35088a,#ffdcc5);
+    }
+}
+#container h1{
+    color: #1386ce;
+}
+#container .cronometro{
+    width:600px;
+    height:170px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#container .cronometro .tempo{
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d036d;
+}
+#container .cronometro .tempo .minutos , .segundos{
+    min-width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #845bff71;
+    text-align: center;
+    color: #daf1ff;
+}
+#container .cronometro .tempo h1{
+    font-size: 45px;    
+}
+#container .cronometro .entrada-tempo{
+    width: 250px;
+    height: 150px;
+    gap: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d036d;
+    color: #daf1ff;
+}
+#container .cronometro .entrada-tempo input{
+    width: 100px;
+    height: 30px;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #845bff;
+    color: #daf1ff;
+    font-size: 15px;
+    box-shadow: 5px 0px 0px #daf1ff;
+}
+#container .cronometro .entrada-tempo input::placeholder{
+    color: #daf1ff;
+}
+#container .btn{
+    width: 560px;
+    height: 80px;
+    gap: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d036d;
+    border-radius: 10px;
+}
+#container .btn button{
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    border: 0;
+    color: #daf1ff;
+    font-weight: bold;
+    box-shadow: 5px 0px 0px #daf1ff;
+    transition: all 0.5s ease-in-out;
+}
+#container .btn button:hover{
+    transform: scale(0.9);
+}
+#container .btn #btn-iniciar{
+    background-color: green;
+}
+#container .btn #btn-stop{
+    background-color: red;
+    display: none;
+   
+}
+#container .btn #btn-pausar{
+    display: none;
+}
+
+#container .btn #btn-pausar{
+    background-color:#845bff;  
+}
